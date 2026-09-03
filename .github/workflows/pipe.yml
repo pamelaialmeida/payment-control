@@ -27,7 +27,7 @@ jobs:
       run: npm start &
 
     - name: Aguardar API
-      run: npx wait on http://localhost:4000/graphql
+      run: npx wait-on http://localhost:4000/graphql
 
     - name: Executar os testes
       run: npm test
